@@ -1,0 +1,26 @@
+body {
+    color: #333;
+    font-family: sans-serif;
+}
+
+.column {
+    float: left;
+    width: 100%;
+    min-height: 35vh;
+}
+
+.one, .three { background-color: #eee; }
+.two, .four { background-color: #999; }
+
+.three, .four { display: none; }
+
+
+@media screen and (min-width: 700px) {
+    .column { width: 33.3333%; min-height: 50vh; }
+    .three { display: block; }
+}
+
+@media screen and (min-width: 1000px) {
+    .column { width: 25%; }
+    .four { display: block; }
+}
